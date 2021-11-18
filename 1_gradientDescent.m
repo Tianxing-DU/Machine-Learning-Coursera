@@ -20,6 +20,7 @@ for iter = 1:num_iters,
     % theta_2 = theta(2) - alpha * (1/m) * sum((X*theta-y).*X(:,2));
     % Afterwards you are setting the temporary thetas (here called theta_1 and 
     % theta_2)correctly back to the "real" theta.
+    % 上面的只适用于两个theta的情况                     
 
 
 
