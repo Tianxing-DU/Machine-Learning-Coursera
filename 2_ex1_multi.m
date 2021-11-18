@@ -83,6 +83,8 @@ fprintf('Running gradient descent ...\n');
 
 % Choose some alpha value
 alpha = 1;
+% 这里我不知道为什么，只有alpha=0.01的时候，我才能比较下面的三个不同alpha的影响。
+% 其他时候（比如这里的alpha=1），我不能做出比较。即使我检查了code，觉得这里的alpha是独立存在的（后面的alpha都是带了尾数，alpha1，2，3）
 alpha1 = 1;
 alpha2 = 0.3;
 alpha3 = 0.1;
@@ -101,7 +103,7 @@ plot(1:50, J_history1(1:50), '-b', 'LineWidth', 2);
 plot(1:50, J_history2(1:50), '-r', 'LineWidth', 2);
 plot(1:50, J_history3(1:50), '-k', 'LineWidth', 2);
 %这里也可以简单运算，变成plot(1:numel(J_history1), J_history1, '-b', 'LineWidth', 2); 
-legend show 
+legend show % legend的操作方式仍然不是很明确，只有下次真的要用到的时候在详细了解（我还是主要用python写code，octave只是一个过渡）
 xlabel('Number of iterations');
 ylabel('Cost J');
 
@@ -114,7 +116,9 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
-price = [1 (1650-mu(1))/sigma(1) (3-mu(2))/sigma(2)]*theta; % You should change this
+price = [1 (1650-mu(1))/sigma(1) (3-mu(2))/sigma(2)]*theta; 
+% 用基础算法linear regreation + Feature Normalization带入原方程时，也要考虑FN的这一步（对比Noramlequation）
+% 值得一提的是，这里的计算方式还需要选对alpha，但Normal equation直接全部做对
 
 
 % ============================================================
@@ -159,7 +163,9 @@ fprintf('\n');
 
 % Estimate the price of a 1650 sq-ft, 3 br house
 % ====================== YOUR CODE HERE ======================
-price = [1 1650 3]*theta; % You should change this
+price = [1 1650 3]*theta; 
+% 非常简化一步到位。，注意添加了这个1参数
+% 值得一提的是，这里的theta output和FN的theta不一样
 
 
 % ============================================================
