@@ -10,17 +10,17 @@ X_norm = X;
 mu = zeros(1, size(X, 2));
 sigma = zeros(1, size(X, 2));
 
-mu = mean(X);
+mu = mean(X); % 都是给出columwise的mean 或std（默认）
 sigma = std(X);
 
-N = columns(X);
+N = columns(X);% 这里也可以使用size(X,2), 2 在这里会给出column得多少， 1是row column
 for i=1:N,
    Mu = mu(:,i);
    Sigma = sigma(:,i);
    X_norm (:, i) = (X(:,i) -Mu)/Sigma;
    i=i+1; % maybe I do not need it here
 end
-
+% 这里的问题是X_norm不会被 tempo memory记录
 
 
 % =============_norm======== YOUR CODE HERE ======================
