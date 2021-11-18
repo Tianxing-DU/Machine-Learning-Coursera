@@ -14,3 +14,6 @@ ex1.m - Octave/MATLAB script that steps you through the exercise ex1 multi.m - O
 [†] gradientDescentMulti.m - Gradient descent for multiple variables 
 [†] featureNormalize.m - Function to normalize features
 [†] normalEqn.m - Function to compute the normal equations
+
+IMPORTANT
+To successfully visualize the data, give th ecode -- setenv("GNUTERM","qt") -- in Octave-cli. (Octave-gui does not need)
