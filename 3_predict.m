@@ -23,6 +23,8 @@ for i=1:length (X),
    end
 end
 
+% 还有一个更简单的，直接使用Octave自带的判断，输出还是Matrix
+% p = sigmoid(X*theta)>=0.5;
 
 
 
