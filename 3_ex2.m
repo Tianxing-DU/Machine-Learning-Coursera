@@ -146,7 +146,10 @@ fprintf('Expected value: 0.775 +/- 0.002\n\n');
 p = predict(theta, X);
 
 fprintf('Train Accuracy: %f\n', mean(double(p == y)) * 100);
+% x==y returns a 0 (false) at each index where x and y are equal; double re-casts that to 64-bit doubles (but still zeros and ones).
+% Now you have an array of zeroes and ones; take the mean of that, and you have the sum of all of the elements 
+% - in this case only the ones increase it - divided by the number of elements.
+% That is the percentage of places in the array at which x and y are equal.
+% Though double really isn't necessary here.
 fprintf('Expected accuracy (approx): 89.0\n');
 fprintf('\n');
-
-
