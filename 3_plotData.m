@@ -20,7 +20,7 @@ pos = find(y==1); neg = find(y == 0);
 plot(X(pos, 1), X(pos, 2), 'k+','LineWidth', 2, 'MarkerSize', 5);
 plot(X(neg, 1), X(neg, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 5);
 
-
+% 我使用for loop + if condition 也是可以完成的（可惜legend不对，这里于是没有保存）
 
 
 
