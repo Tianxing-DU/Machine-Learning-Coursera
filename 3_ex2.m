@@ -43,7 +43,8 @@ ylabel('Exam 2 score')
 
 % Specified in plot order
 legend('Admitted', 'Not admitted')
-hold off;
+% 只有单独plot的函数，legend才能默认给出表示
+hold off; % 不要忘记
 
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
@@ -55,7 +56,7 @@ pause;
 %  costFunction.m
 
 %  Setup the data matrix appropriately, and add ones for the intercept term
-[m, n] = size(X);
+[m, n] = size(X); % 这一步其实很节省时间
 
 % Add intercept term to x and X_test
 X = [ones(m, 1) X];
