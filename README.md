@@ -1,5 +1,5 @@
 # Machine-Learning-Coursera
-I gather here programming exercises from Machine Learning Coursera (Prof. Wu Enda, Stanford University)
+I gather programming exercises from Machine Learning Coursera (Prof. Wu Enda, Stanford University) here
 
 IMPORTANT:
 
