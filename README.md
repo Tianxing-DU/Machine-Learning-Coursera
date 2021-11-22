@@ -9,6 +9,7 @@ Files can be generally divided in two parts:
 1) Linear Regression
 2) Linear regression with multiple variables
 3) Logistic Regression
+4) Regularized logistic regression
 
 
 
