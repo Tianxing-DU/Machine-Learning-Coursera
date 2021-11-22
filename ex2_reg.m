@@ -100,8 +100,8 @@ pause;
 %  Try the following values of lambda (0, 1, 10, 100).
 %
 %  How does the decision boundary change when you vary lambda? How does
-%  the training set accuracy vary?
-%
+%  the training set accuracy vary? -- low lambda goes to underfitting problem
+% 
 
 % Initialize fitting parameters
 initial_theta = zeros(size(X, 2), 1);
