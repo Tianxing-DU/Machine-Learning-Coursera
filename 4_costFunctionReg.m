@@ -23,7 +23,7 @@ h_x = sigmoid(X*theta);
 % theta after jumping the first one (which does not need to be regularised
 theta_j1 = theta(2:n);
 
-J = (((-y)'*log(h_x)-(1-y)'*log(1-h_x))/m) + (lambda/(2*m)) * theta_j1'*theta_j1;
+J = (((-y)'*log(h_x)-(1-y)'*log(1-h_x))/m) + (lambda/(2*m)) * theta_j1'*theta_j1; % 之前这里有过错误，(2*m)这里的括号问题。以后做数学运算的时候值得注意
 % grad calculated by the theta 1 (without regularisation)
 grad = 1/m * X'*(h_x - y);
 
