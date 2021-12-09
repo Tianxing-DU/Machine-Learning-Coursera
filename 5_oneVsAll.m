@@ -52,6 +52,7 @@ for i = 1:num_labels, % 有好多个classifiers我就循环多少次
   initial_theta = zeros(n+1, 1); % 这一步要学习啊
   options = optimset('GradObj', 'on', 'MaxIter', 50); 
 % 这里我就简单copy past，具体不是很明白，以后python估计会有类似的包
+% 但是需要明白的是，这里是对梯度下降的代替
   [theta] = fmincg(@(t)(lrCostFunction(t, X, (y==i), lambda)), initial_theta, options);
 % 这里得到的theta应该为row vector (n+1, 1)
   all_theta(i, :) = theta'; 
