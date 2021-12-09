@@ -68,6 +68,30 @@ plotDecisionBoundary.m - Function to plot classifier’s decision bound- ary
 
 [⋆] costFunctionReg.m - Regularized Logistic Regression Cost
 
+---------- 5)6)-----------
+
+ex3.m - Octave/MATLAB script that steps you through part 1
+
+ex3 nn.m - Octave/MATLAB script that steps you through part 2 ex3data1.mat - Training set of hand-written digits
+
+ex3weights.mat - Initial weights for the neural network exercise 
+
+submit.m - Submission script that sends your solutions to our servers 
+
+displayData.m - Function to help visualize the dataset
+
+fmincg.m - Function minimization routine (similar to fminunc) 
+
+sigmoid.m - Sigmoid function
+
+[⋆] lrCostFunction.m - Logistic regression cost function
+
+[⋆] oneVsAll.m - Train a one-vs-all multi-class classifier
+
+[⋆] predictOneVsAll.m - Predict using a one-vs-all multi-class classifier 
+
+[⋆] predict.m - Neural network prediction function
+
 # Stanford Honor Code
 
 "We strongly encourage students to form study groups, and discuss the lecture videos (including in-video questions). We also encourage you to get together with friends to watch the videos together as a group. However, the answers that you submit for the review questions should be your own work. For the programming exercises, you are welcome to discuss them with other students, discuss specific algorithms, properties of algorithms, etc.; we ask only that you not look at any source code written by a different student, nor show your solution code to other students."
